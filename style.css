@@ -1,0 +1,173 @@
+/*reset browser styles*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+		}
+ol { 
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+/* end reset browser styles */
+
+body{
+	font-family: 'Prompt', sans-serif;
+	font-size: 17px;
+}
+.container{
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+}
+/************HEADER************/
+section.first{
+	background-image: url(img/header_back.png);
+	height: 900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header{
+	
+	position: relative;
+	
+}
+img.logo{
+	position: absolute;
+	left: 5%;
+}
+.row_black{
+	background-color: #101010;
+}
+.row_white{
+	background-color:#fff;
+	
+}
+
+.header_top{
+	display: flex;
+	justify-content: space-around;
+	height: 45px;
+	font-size: 0.6rem;
+	text-transform: uppercase;
+	color: #858585;
+	align-items: center;
+	
+	
+}
+.header_down{
+	display: flex;
+	height: 67px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.header_top_nav a{
+	color: #858585;
+	padding-right: 15px;
+}
+.header_top_info{
+margin-left: 30px;
+}
+.header_down_nav{
+	margin-right: 200px;
+}
+.header_down_nav a{
+	
+	color: #000;
+	font-weight: bold;
+	border-right: 1px solid #aca9a9;
+	padding: 20px 20px;
+	
+	}
+.header_down_nav a:hover{
+	
+	color: #ff6600;
+	transition: color 1s ease;
+	
+	}
+img.search, img.bag {
+	border-right: 1px solid #aca9a9;
+	padding: 23px 20px;
+}
+img.search{
+	border-left: 1px solid #aca9a9;
+}
+.header_down_icons{
+	position: relative;
+	display: flex;
+}
+img.number{
+	position: absolute;
+	top: 15%;
+	left: 80%;
+}
+/***********************************************/
+
+img.logo_puma{
+	display: block;
+	margin:110px auto;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ff6600;
+}
+
+.first h1 {
+	color: #ffffff;
+	font-size: 4.7rem;
+	text-align: center;
+	position: relative;
+}
+.first h1::before{
+	content: " ";
+	border: 0.5px solid #fff;
+	width: 55px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+.first h1::after{
+	content: " ";
+	border: 0.5px solid #fff;
+	width: 55px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+p.first_info {
+	color: #cbcbcb;
+	font-size: 1.18rem;
+	text-align: center;
+}
+button.find_out {
+	padding: 20px 0;
+	padding-left: 30px;
+	padding-right: 45px;
+	background: none;
+	color: #fff;
+	margin: 80px auto;
+	display: block;
+	position: relative;
+	max-width: 170px;
+	font-size: 0.7rem;
+	
+}
+button.find_out::after{
+	content: " ";
+	background-image: url(img/small_arrow.png);
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 6px;
+	position: absolute;
+	top: 40%;
+	right: 10%
+}
