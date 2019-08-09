@@ -102,6 +102,7 @@ a {
 body {
 	font-family: 'Prompt', sans-serif;
 	font-size: 17px;
+	background-color: #f4f4f4;
 }
 
 .container {
@@ -385,7 +386,9 @@ section.blog_row2,
 section.blog_row3,
 section.blog_row4 {
 	display: flex;
-
+	max-height: 590px;
+	height: 100%;
+	background-color: #fff;
 }
 
 .blog_row1_1,
@@ -409,10 +412,109 @@ section.blog_row4 {
 	font-weight: bold;
 	margin: 124px auto 30px;
 	padding: 0 60px;
-
 }
 
 img.arrow_orange {
 	display: block;
 	margin: 0 auto;
+}
+
+/************button Read more********************/
+.button_read {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+article.button_read a {
+	display: inline-block;
+	margin: 70px auto;
+	text-transform: uppercase;
+	color: #8c8c8c;
+	border: 2px solid #c4c4c4;
+	padding: 20px 50px;
+	font-weight: bold;
+	font-size: 0.7rem;
+
+}
+
+article.button_read a:hover {
+	border-color: #ff6600;
+}
+
+/********All brands**********************************/
+
+.all_brands {
+	background-image: url(img/footer_between_brand.png);
+	background-repeat: no-repeat;
+	background-position: 48% 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 80px 0;
+}
+
+/*******************Footer********************************/
+footer {
+	background-color: #000;
+	max-height: 480px;
+	height: 100%;
+}
+
+.footer_row_1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+
+.footer_row_2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 140px;
+	position: relative;
+}
+
+.footer_row1_nav_left nav a,
+.footer_row1_nav_right nav a {
+	color: #555555;
+	margin-right: 20px;
+	font-size: 0.8rem;
+	font-weight: bold;
+
+}
+
+.footer_row1_nav_left nav a:hover,
+.footer_row1_nav_right nav a:hover {
+	color: #fff;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ff6600;
+}
+
+div.footer_row_2_icons::after {
+	content: " ";
+	width: 470px;
+	border-bottom: 1px solid rgba(46, 46, 46, 0.5);
+	position: absolute;
+	top: 20%;
+	right: 0;
+}
+
+div.footer_row_2_icons::before {
+	content: " ";
+	width: 470px;
+	border-bottom: 1px solid rgba(46, 46, 46, 0.5);
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+
+.footer_row_2_copyright p {
+	color: #5c5c5c;
+	/* grey */
+	margin-top: 40px;
+	font-size: 0.6rem;
 }
