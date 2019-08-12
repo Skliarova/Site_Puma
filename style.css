@@ -109,6 +109,7 @@ body {
 	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
+	height: auto;
 }
 
 /************HEADER************/
@@ -400,6 +401,7 @@ section.blog_row4 {
 .blog_row4_1,
 .blog_row4_2 {
 	display: flex;
+	position: relative;
 }
 
 .blog_row1_1_info {
@@ -414,6 +416,16 @@ section.blog_row4 {
 	padding: 0 60px;
 }
 
+img.white_arrow{
+	position: absolute;
+	left: 50%;
+	top: 45%;
+}
+img.white_arrow_left{
+	position: absolute;
+	right: 50%;
+	top: 45%;
+}
 img.arrow_orange {
 	display: block;
 	margin: 0 auto;
@@ -459,6 +471,15 @@ footer {
 	background-color: #000;
 	max-height: 480px;
 	height: 100%;
+	position: relative;
+}
+img.rhombus{
+	position: absolute;
+	top: -6.5%;
+	left: 47%;
+}
+.footer_row_1_logo img{
+	margin-right: 35px;
 }
 
 .footer_row_1 {
@@ -518,3 +539,4 @@ div.footer_row_2_icons::before {
 	margin-top: 40px;
 	font-size: 0.6rem;
 }
+/********************Media*query*************************/
