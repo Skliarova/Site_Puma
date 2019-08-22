@@ -111,6 +111,10 @@ body {
 	margin: 0 auto;
 	height: auto;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /************HEADER************/
 section.first {
@@ -387,8 +391,6 @@ section.blog_row2,
 section.blog_row3,
 section.blog_row4 {
 	display: flex;
-	max-height: 590px;
-	height: 100%;
 	background-color: #fff;
 }
 
@@ -407,6 +409,7 @@ section.blog_row4 {
 .blog_row1_1_info {
 	max-width: 295px;
 	width: 100%;
+	height: auto;
 }
 
 .blog_row1_1_info p {
@@ -430,6 +433,7 @@ img.arrow_orange {
 	display: block;
 	margin: 0 auto;
 }
+
 
 /************button Read more********************/
 .button_read {
@@ -540,3 +544,43 @@ div.footer_row_2_icons::before {
 	font-size: 0.6rem;
 }
 /********************Media*query*************************/
+@media (max-width: 1024px) {
+	.header_top{
+		justify-content: flex-end;
+	}
+	
+	.header_top_nav{
+		margin-left:  60px;
+		margin-right: 100px;
+	}
+	.header_down{
+		justify-content: center;
+	}
+	
+	.header_down_nav a{
+		font-size: 0.9rem;
+		padding: 20px 15px;
+		
+		}
+	.header_down_nav {
+	margin-right: 120px;
+		margin-left: 150px;
+}
+	.sneaker_link a::after {
+	left: 37%;
+}
+
+	.blog_row1_1_info p {
+
+	margin: 40px 10px;
+	
+}
+	
+	.blog_row1_img img{
+		height: 100%;
+		
+	}
+	.blog_row1_1 img{
+		max-width: 100%
+	}
+}
