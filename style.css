@@ -111,9 +111,10 @@ body {
 	margin: 0 auto;
 	height: auto;
 }
+
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	display: inline-block;
 }
 
 /************HEADER************/
@@ -412,6 +413,12 @@ section.blog_row4 {
 	height: auto;
 }
 
+img.small_photo {
+	max-width: 295px;
+	width: 100%;
+	height: auto;
+}
+
 .blog_row1_1_info p {
 	text-align: center;
 	font-weight: bold;
@@ -419,16 +426,18 @@ section.blog_row4 {
 	padding: 0 60px;
 }
 
-img.white_arrow{
+img.white_arrow {
 	position: absolute;
 	left: 50%;
 	top: 45%;
 }
-img.white_arrow_left{
+
+img.white_arrow_left {
 	position: absolute;
 	right: 50%;
 	top: 45%;
 }
+
 img.arrow_orange {
 	display: block;
 	margin: 0 auto;
@@ -461,13 +470,23 @@ article.button_read a:hover {
 /********All brands**********************************/
 
 .all_brands {
-	background-image: url(img/footer_between_brand.png);
+	/*	background-image: url(img/footer_between_brand.png);*/
+	/*
 	background-repeat: no-repeat;
 	background-position: 48% 50%;
+*/
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 80px 0;
+}
+
+.all_brands img {
+
+	max-width: 130px;
+	width: 100%;
+	height: auto;
+
 }
 
 /*******************Footer********************************/
@@ -477,12 +496,14 @@ footer {
 	height: 100%;
 	position: relative;
 }
-img.rhombus{
+
+img.rhombus {
 	position: absolute;
 	top: -6.5%;
 	left: 47%;
 }
-.footer_row_1_logo img{
+
+.footer_row_1_logo img {
 	margin-right: 35px;
 }
 
@@ -543,44 +564,76 @@ div.footer_row_2_icons::before {
 	margin-top: 40px;
 	font-size: 0.6rem;
 }
+
 /********************Media*query*************************/
-@media (max-width: 1024px) {
-	.header_top{
+@media (min-width: 1024px) {
+	.header_top {
 		justify-content: flex-end;
 	}
-	
-	.header_top_nav{
-		margin-left:  60px;
+
+	.header_top_nav {
+		margin-left: 60px;
 		margin-right: 100px;
 	}
-	.header_down{
+
+	.header_down {
 		justify-content: center;
 	}
-	
-	.header_down_nav a{
+
+	.header_down_nav a {
 		font-size: 0.9rem;
 		padding: 20px 15px;
-		
-		}
+
+	}
+
 	.header_down_nav {
-	margin-right: 120px;
+		margin-right: 120px;
 		margin-left: 150px;
-}
+	}
+
 	.sneaker_link a::after {
-	left: 37%;
-}
+		left: 37%;
+	}
 
 	.blog_row1_1_info p {
 
-	margin: 40px 10px;
-	
-}
-	
-	.blog_row1_img img{
-		height: 100%;
-		
+		margin: 40px 10px;
+
 	}
-	.blog_row1_1 img{
-		max-width: 100%
+
+	img.small_photo {
+		max-width: 50%;
 	}
+
+	.all_brands {
+
+		background-position: 55% 50%;
+		justify-content: space-around;
+	}
+
+	.footer_row_1 {
+		justify-content: center;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+
+	.footer_row1_nav_left nav a,
+	footer_row1_nav_right nav a {
+		font-size: 0.7rem;
+		margin-right: 10px;
+	}
+
+	.footer_row_1_logo {
+		margin-left: 40px;
+	}
+
+	div.footer_row_2_icons::after {
+		width: 410px;
+	}
+
+	div.footer_row_2_icons::before {
+		width: 410px;
+	}
+
+	
 }
