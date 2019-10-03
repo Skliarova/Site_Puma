@@ -109,7 +109,7 @@ body {
 	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
-	height: auto;
+
 }
 
 img {
@@ -393,6 +393,8 @@ section.blog_row3,
 section.blog_row4 {
 	display: flex;
 	background-color: #fff;
+	max-height: 590px;
+	height: auto;
 }
 
 .blog_row1_1,
@@ -499,7 +501,7 @@ footer {
 
 img.rhombus {
 	position: absolute;
-	top: -6.5%;
+	top: -8%;
 	left: 47%;
 }
 
@@ -520,7 +522,7 @@ img.rhombus {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 140px;
+	padding-bottom: 40px;
 	position: relative;
 }
 
@@ -566,38 +568,60 @@ div.footer_row_2_icons::before {
 }
 
 /********************Media*query*************************/
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+	.container {
+		max-width: 980px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	.header_top {
 		justify-content: flex-end;
+
+	}
+
+	.header_top_info p {
+		padding-right: 80px;
 	}
 
 	.header_top_nav {
-		margin-left: 60px;
-		margin-right: 100px;
+		padding-right: 50px;
 	}
+
 
 	.header_down {
 		justify-content: center;
+		align-items: center;
 	}
+
 
 	.header_down_nav a {
 		font-size: 0.9rem;
-		padding: 20px 15px;
+		padding: 24px 15px 21px 10px;
 
 	}
 
+
 	.header_down_nav {
 		margin-right: 120px;
-		margin-left: 150px;
+		margin-left: 120px;
 	}
 
 	.sneaker_link a::after {
 		left: 37%;
 	}
 
+	section.blog_row1,
+	section.blog_row2,
+	section.blog_row3,
+	section.blog_row4 {
+		max-height: 490px;
+		height: auto;
+	}
+
 	.blog_row1_1_info p {
 
-		margin: 40px 10px;
+		margin: 40px 0px;
 
 	}
 
@@ -611,29 +635,46 @@ div.footer_row_2_icons::before {
 		justify-content: space-around;
 	}
 
+	img.rhombus {
+		top: -9%;
+	}
+
 	.footer_row_1 {
-		justify-content: center;
+		justify-content: space-around;
 		padding-bottom: 40px;
 		padding-top: 40px;
 	}
 
 	.footer_row1_nav_left nav a,
-	footer_row1_nav_right nav a {
-		font-size: 0.7rem;
-		margin-right: 10px;
+	.footer_row1_nav_right nav a {
+		font-size: 0.8rem;
+		margin: 5px;
 	}
 
 	.footer_row_1_logo {
-		margin-left: 40px;
+		margin-left: 15px;
 	}
 
 	div.footer_row_2_icons::after {
-		width: 410px;
+		width: 390px;
+		top: 15%;
 	}
 
 	div.footer_row_2_icons::before {
-		width: 410px;
+		width: 390px;
+		top: 15%;
 	}
 
-	
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 730px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
+
+
 }
