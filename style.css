@@ -117,6 +117,7 @@ img {
 	display: inline-block;
 }
 
+
 /************HEADER************/
 section.first {
 	background-image: url(img/header_back.png);
@@ -677,4 +678,7 @@ div.footer_row_2_icons::before {
 
 
 
+}
+.transf {
+	text-transform: lowercase;
 }
